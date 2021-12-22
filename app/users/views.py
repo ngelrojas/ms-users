@@ -59,7 +59,7 @@ class UpdateUserView(viewsets.ViewSet):
             current_user.is_activate = False
             current_user.save()
             return Response(
-                {"data": True, "msg": "user delted"}, status=status.HTTP_204_NO_CONTENT
+                {"data": True, "msg": "user deleted"}, status=status.HTTP_204_NO_CONTENT
             )
         except Exception as err:
             return Response(

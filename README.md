@@ -18,48 +18,14 @@
 
 ### migreate db
 ```
- - docker-compose exec api python manage.py migrate --noinput 
+ - docker-compose exec api python3 manage.py migrate --noinput 
 ```
 
-### inside the docker images data base 
+### create users with commands 
 ```
- - docker-compose exec db psql --username=myuser --dbname=mydatabase 
-```
-
-### list volumes docker 
-### display a list of volumes
-```
- - docker volume ls 
+ - docker-compose exec api python3 manage.py users
 ```
 
-### inspect a volume 
-```
- - docker volume inspect my-volume-listed 
-```
-
-### build a docker using tag 
-```
- - docker build -f ./app/Dockerfile -t mytagfordocker:latest ./app
-```
-
-### run another images in other port 
-### docker is running on port localhost:9002
-```
-docker run -d \                                     
--p 9002:9001 \
--e "SECRET_KEY=mysecretkey" -e "DEBUG=1" -e "ALLOWED_HOSTS=*" \
-api python /usr/src/app/manage.py runserver 0.0.0.0:9001
-```
-
-### show docker lgos
-```
-- docker-compose -f docker-compose.prod.yml logs -f
-```
-
-### create module
-```
-- docker-compose exec api python manage.py startapp myapp
-```
 
 ### TROUBLESHOOTING
 ### 1
