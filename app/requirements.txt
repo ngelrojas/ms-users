@@ -6,3 +6,5 @@ psycopg2-binary
 gunicorn
 flake8
 six
+celery
+kombu
