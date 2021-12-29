@@ -1,7 +1,7 @@
 ### installation
-- copy file called cot-env from fenv folder, paste and renamed to .cot-env to
+- copy file called env from fenv folder, paste and renamed to .env to
   root folder
-- copy file called cot-envdb from fenv folder, paste and renamed to .cot-envdb
+- copy file called env from fenv folder, paste and renamed to .env
   to root folder
 - create folder and file called log folder and inside log folder a
   cotizate_api_application.log file, all inside app folder. 

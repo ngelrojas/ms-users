@@ -9,3 +9,7 @@ SQL_PASSWORD=yourpassword
 SQL_HOST=db
 SQL_PORT=5432
 DATABASE=postgres
+
+POSTGRES_USER=youruser
+POSTGRES_PASSWORD=yourpassword
+POSTGRES_DB=yourdatabase

@@ -12,7 +12,7 @@ services:
     expose:
       - 9001
     env_file:
-      - ./.cot-env
+      - ./.env
     depends_on:
       - db
 
@@ -22,7 +22,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
-      - ./.cot-envdb
+      - ./.env
 
   nginx:
     build: ./nginx
